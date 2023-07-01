@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ded5ca147e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="script.js" defer></script>
+    <title>12gInc</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <button><img src="imgs/Lesley.jpg" alt="12g" /></button>
+        <ul class="navLinks">
+          <li>Services</li>
+          <li>Process</li>
+          <li>Pricing</li>
+        </ul>
+      </div>
+      <button class="btn">Connect</button>
+      <div class="toggleBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="dropdownList">
+        <ul>
+          <li><button>Services</button></li>
+          <li><button>Process</button></li>
+          <li><button>Pricing</button></li>
+          <li><button>Testimonials</button></li>
+          <li><button class="connect">Connect</button></li>
+        </ul>
+      </div>
+    </header>
+    <section class="about animate__animated animate__backInDown">
+      <h1>Unleash Your Online Potential with 12G Inc</h1>
+      <p>
+        Welcome to 12G Inc, a cutting-edge web development company dedicated to
+        crafting exceptional digital experiences. We harness the power of
+        technology to help businesses thrive in the online world. Our
+        specialized team creates custom web solutions tailored to your unique
+        needs, whether it's a stunning website, an intuitive e-commerce
+        platform, or robust web applications.
+      </p>
+      <p>
+        We transform your ideas into reality, delivering seamless and engaging
+        online experiences. With our focus on innovation and user-centric
+        design, our skilled developers leverage the latest technologies to
+        ensure your website stands out and leaves a lasting impression.
+      </p>
+    </section>
+    <section class="services .section show">
+      <h1>What we do</h1>
+      <div class="servicesList">
+        <div class="service">
+          <img src="imgs/web-development.png" alt="website" />
+          <h2>Website Development</h2>
+          <p>
+            Create stunning, responsive websites optimized for speed and
+            performance. Tailored to your needs and goals.
+          </p>
+        </div>
+        <div class="service">
+          <img src="imgs/web-design.png" alt="ecommerce" />
+          <h2>E-commerce</h2>
+          <p>
+            Build powerful, user-friendly e-commerce platforms that drive sales
+            and boost conversions.
+          </p>
+        </div>
+        <div class="service">
+          <img src="imgs/mobile-app.png" alt="app" />
+          <h2>Web Applications</h2>
+          <p>
+            Develop custom, scalable web applications that cater to your
+            specific business requirements
+          </p>
+        </div>
+        <div class="service">
+          <img src="imgs/seo.png" alt="seo" />
+          <h2>SEO</h2>
+          <p>
+            Boost your search engine rankings with our tailored SEO services,
+            designed to fit your business goals.
+          </p>
+        </div>
+        <div class="service">
+          <img src="imgs/graphic-design.png" alt="graphic" />
+          <h2>Graphic Design</h2>
+          <p>
+            Elevate your brand with professional and captivating graphic design
+            services, including logos, business cards, and marketing materials.
+          </p>
+        </div>
+
+        <div class="service">
+          <img src="imgs/digitalTransformation.png" alt="digital" />
+          <h2>Digital Transformation</h2>
+          <p>
+            Transform your business with our comprehensive digital
+            transformation services, tailored to your unique needs and goals.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="process">
+      <h1>Execution</h1>
+      <div class="processes">
+        <div class="process-container">
+          <div class="process-step">
+            <div class="process-icon" onclick="toggleDetails(1)">
+              <img src="imgs/step1.png" alt="Step 1" class="icon-image" />
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-icon" onclick="toggleDetails(2)">
+              <img src="imgs/step2.png" alt="Step 2" class="icon-image" />
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-icon" onclick="toggleDetails(3)">
+              <img src="imgs/step3.png" alt="Step 3" class="icon-image" />
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-icon" onclick="toggleDetails(4)">
+              <img src="imgs/step4.png" alt="Step 4" class="icon-image" />
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-icon" onclick="toggleDetails(5)">
+              <img src="imgs/step5.png" alt="Step 5" class="icon-image" />
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-icon" onclick="toggleDetails(6)">
+              <img src="imgs/step6.png" alt="Step 6" class="icon-image" />
+            </div>
+          </div>
+        </div>
+        <div class="CenterDetails">
+          <div class="process-details" id="details1">
+            <h3>First Call</h3>
+            <p>
+              We start by getting to know you and your business. We'll have an
+              initial conversation to understand your goals and requirements,
+              allowing us to tailor our services specifically to your needs.
+            </p>
+          </div>
+          <div class="process-details" id="details2">
+            <h3>Planning</h3>
+            <p>
+              Once we have a clear understanding of your objectives, we'll work
+              closely with you to create a detailed plan. This includes defining
+              project milestones, establishing timelines, and determining the
+              best strategies to achieve your desired outcomes.
+            </p>
+          </div>
+          <div class="process-details" id="details3">
+            <h3>Design & Development</h3>
+            <p>
+              Our talented team will bring your vision to life. We'll design and
+              develop your website or application, ensuring it aligns with your
+              brand identity and delivers a seamless user experience. Throughout
+              this process, we'll keep you informed and involved, seeking your
+              input and feedback along the way.
+            </p>
+          </div>
+          <div class="process-details" id="details4">
+            <h3>Testing</h3>
+            <p>
+              Quality is of utmost importance to us. We conduct thorough testing
+              to ensure that your website or application functions flawlessly
+              and meets the highest standards. Any necessary refinements or
+              adjustments will be made to guarantee optimal performance.
+            </p>
+          </div>
+          <div class="process-details" id="details5">
+            <h3>Deployment</h3>
+            <p>
+              It's time to go live! We'll carefully deploy your project, making
+              sure it's available to your target audience. Our team will handle
+              all technical aspects, ensuring a smooth transition from
+              development to the live environment.
+            </p>
+          </div>
+          <div class="process-details" id="details6">
+            <h3>Support & Maintenance</h3>
+            <p>
+              We're here for you even after the project is complete. We provide
+              ongoing support and maintenance services to address any issues,
+              implement updates, and keep your website or application running
+              smoothly. You can count on us to provide reliable support and
+              assistance whenever you need it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <h1>Pricing</h1>
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <h2>Basic</h2>
+          <h3>P.O.R</h3>
+          <ul>
+            <li>1-3 Pages</li>
+            <li>Responsive Design</li>
+            <li>Basic SEO</li>
+            <li>1 Month Support</li>
+          </ul>
+          <button class="Pricebtn">Get Started</button>
+        </div>
+        <div class="pricing-card">
+          <h2>Standard</h2>
+          <h3>P.O.R</h3>
+          <ul>
+            <li>4-6 Pages</li>
+            <li>Responsive Design</li>
+            <li>Basic SEO</li>
+            <li>2 Months Support</li>
+          </ul>
+          <button class="Pricebtn">Get Started</button>
+        </div>
+        <div class="pricing-card">
+          <h2>Premium</h2>
+          <h3>P.O.R</h3>
+          <ul>
+            <li>7-10 Pages</li>
+            <li>Responsive Design</li>
+            <li>Basic SEO</li>
+            <li>3 Months Support</li>
+          </ul>
+          <button class="Pricebtn">Get Started</button>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <p>
+        From as little as K500, we can make you a website and enhance your
+        online presence for your business.
+      </p>
+      <div class="form-container">
+        <form class="form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required="" />
+          </div>
+          <div class="form-group">
+            <label for="textarea">How Can We Help You?</label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              rows="10"
+              cols="50"
+              required=""
+            >
+            </textarea>
+          </div>
+          <button class="form-submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="contactSM">
+        <h3>Follow Us</h3>
+        <ul>
+          <li>
+            <a href="facebook.com/lmashaya"
+              ><i class="fa-brands fa-facebook fa-beat-fade"></i
+            ></a>
+          </li>
+          <li>
+            <a href="facebook.com/lmashaya"
+              ><i class="fa-brands fa-twitter fa-beat-fade"></i
+            ></a>
+          </li>
+          <li>
+            <a href="facebook.com/lmashaya"
+              ><i class="fa-brands fa-instagram fa-beat-fade"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <div class="image">Logo Here</div>
+          <div class="tagline">
+            <p>Unleash Your Online Potential with 12G Inc</p>
+          </div>
+          <div class="phone">+260978386755</div>
+        </div>
+        <div class="menuList">
+          <h3>Site Navigation</h3>
+          <ul>
+            <li>Services</li>
+            <li>Process</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+        <div class="Footercontact">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <a href="facebook.com/lmashaya"
+                ><i class="fa-brands fa-facebook fa-beat-fade"></i
+              ></a>
+            </li>
+            <li>
+              <a href="twitter.com/lmash12"
+                ><i class="fa-brands fa-twitter fa-beat-fade"></i
+              ></a>
+            </li>
+            <li>
+              <a href="instagram.com/lesley.t.m"
+                ><i class="fa-brands fa-instagram fa-beat-fade"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="footerBottom">
+      <p>All Rights Reserved. 2023</p>
+      <p>Site By 12G Inc</p>
+    </div>
+  </body>
+</html>
