@@ -376,7 +376,6 @@ i.fa-solid.fa-xmark {
   padding: 30px;
   text-align: center;
   border-radius: 10px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   box-shadow: 2px 2px 3px 2px rgba(255, 255, 255, 0.425);
   transition: all 0.3s ease;
 }
@@ -607,3 +606,111 @@ footer li:hover {
   color: black;
 }
 /* body css */
+@media (max-width: 992px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .about p {
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+  }
+  .services {
+    margin-bottom: 50px;
+  }
+  .servicesList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* margin-top: 50px; */
+  }
+  .process h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .processes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .process-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .process-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .process-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .CenterDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .process-details {
+    width: 90%;
+  }
+  .process-icon:focus .icon-image {
+    content: url("imgs/clickMe.png");
+  }
+
+  .form-container {
+    width: 95%;
+  }
+  .footerlogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Footercontact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .Footercontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
