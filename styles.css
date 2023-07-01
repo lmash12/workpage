@@ -64,7 +64,9 @@ body {
 .navLinks li:hover {
   color: #333333;
 }
-
+.navbar {
+  padding: 0 20px;
+}
 .navbar button {
   padding: 5px 10px;
   margin: 0;
@@ -594,10 +596,14 @@ footer li:hover {
   justify-content: space-between;
   flex-direction: row;
 }
-.logo {
+.footerlogo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.Footercontact a {
+  text-decoration: none;
+  color: black;
 }
 /* body css */
