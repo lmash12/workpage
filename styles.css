@@ -81,7 +81,7 @@ header {
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown_menu.open {
-  height: 300px;
+  height: 500px;
 }
 
 .dropdown_menu li {
@@ -139,7 +139,7 @@ header {
     width: 100%;
     display: block;
     z-index: 1;
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
   .dropdown_menu a {
     color: #000;
