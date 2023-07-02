@@ -46,7 +46,7 @@ header {
 }
 .navbar .toggle_btn {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   display: none;
 }
@@ -89,6 +89,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .dropdown_menu .action_btn {
   width: 100%;
@@ -129,13 +130,21 @@ header {
   }
   .navbar .toggle_btn {
     display: block;
+    color: #000;
+    z-index: 3;
   }
   .dropdown_menu {
-    background-color: #000;
+    background-color: #e0dede;
+    top: 0;
+    width: 100%;
     display: block;
+    z-index: 1;
+    padding-top: 2rem;
   }
   .dropdown_menu a {
-    color: #fff;
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
   }
 }
 
