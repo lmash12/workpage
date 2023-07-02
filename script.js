@@ -1,13 +1,17 @@
-const toggleBtn = document.querySelector(".toggleBtn");
-const toggleBtnIcon = document.querySelector(".toggleBtn i");
-const dropdownList = document.querySelector(".dropdownList");
+const toggleBtn = document.querySelector(".toggle_btn");
+const toggleBtnIcon = document.querySelector(".toggle_btn i");
+const dropdownMenu = document.querySelector(".dropdown_menu");
 
 toggleBtn.onclick = function () {
-  dropdownList.classList.toggle("open");
-  const isOpen = dropdownList.classList.contains("open");
+  dropdownMenu.classList.toggle("open");
+  const isOpen = dropdownMenu.classList.contains("open");
 
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: "smooth" });
+}
 
 function toggleDetails(index) {
   const details = document.getElementById(`details${index}`);

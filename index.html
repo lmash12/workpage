@@ -15,31 +15,36 @@
     <script src="script.js" defer></script>
     <title>12gInc</title>
   </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">
-        <button><img src="imgs/Lesley.jpg" alt="12g" /></button>
-        <ul class="navLinks">
-          <li>Services</li>
-          <li>Process</li>
-          <li>Pricing</li>
+  <body id="home">
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">Logo will come here</a>
+        </div>
+        <ul class="links">
+          <li><a onclick="scrollToSection('home')">Home</a></li>
+          <li><a onclick="scrollToSection('services')">Services</a></li>
+          <li><a onclick="scrollToSection('process')">Process</a></li>
+          <li><a onclick="scrollToSection('pricing')">Pricing</a></li>
         </ul>
-      </div>
-      <button class="btn">Connect</button>
-      <div class="toggleBtn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="dropdownList">
-        <ul>
-          <li><button>Services</button></li>
-          <li><button>Process</button></li>
-          <li><button>Pricing</button></li>
-          <li><button>Testimonials</button></li>
-          <li><button class="connect">Connect</button></li>
-        </ul>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown_menu">
+          <li><a onclick="scrollToSection('home')">Home</a></li>
+          <li><a onclick="scrollToSection('services')">Services</a></li>
+          <li><a onclick="scrollToSection('process')">Process</a></li>
+          <li><a onclick="scrollToSection('pricing')">Pricing</a></li>
+          <li>
+            <a onclick="scrollToSection('contact')" class="action_btn"
+              >Connect</a
+            >
+          </li>
+        </div>
       </div>
     </header>
-    <section class="about animate__animated animate__backInDown">
+    <section class="about animate__animated animate__backInDown" id="about">
       <h1>Unleash Your Online Potential with 12G Inc</h1>
       <p>
         Welcome to 12G Inc, a cutting-edge web development company dedicated to
@@ -56,7 +61,7 @@
         ensure your website stands out and leaves a lasting impression.
       </p>
     </section>
-    <section class="services .section show">
+    <section class="services .section show" id="services">
       <h1>What we do</h1>
       <div class="servicesList">
         <div class="service">
@@ -110,7 +115,7 @@
         </div>
       </div>
     </section>
-    <section class="process">
+    <section class="process" id="process">
       <h1>Execution</h1>
       <div class="processes">
         <div class="process-container">
@@ -204,7 +209,7 @@
         </div>
       </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <h1>Pricing</h1>
       <div class="pricing-container">
         <div class="pricing-card">
@@ -242,7 +247,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <h1>Contact Us</h1>
       <p>From as little as K500, we can enhance your online presence.</p>
       <div class="form-container">
@@ -298,9 +303,10 @@
         <div class="menuList">
           <h3>Site Navigation</h3>
           <ul>
-            <li>Services</li>
-            <li>Process</li>
-            <li>Pricing</li>
+            <li><a onclick="scrollToSection('home')">Home</a></li>
+            <li><a onclick="scrollToSection('services')">Services</a></li>
+            <li><a onclick="scrollToSection('process')">Process</a></li>
+            <li><a onclick="scrollToSection('pricing')">Pricing</a></li>
           </ul>
         </div>
         <div class="Footercontact">
