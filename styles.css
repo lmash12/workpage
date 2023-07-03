@@ -151,13 +151,6 @@ header {
   }
 }
 
-@media (max-width: 576px) {
-  .dropdown_menu {
-    left: 2rem;
-    width: unset;
-  }
-}
-
 /* body css */
 /* about intro */
 .about {
@@ -171,7 +164,7 @@ header {
   animation-duration: 2s;
 }
 .about h1 {
-  font-size: clamp(2rem, 6vw, 4rem);
+  font-size: clamp(1rem, 4vw, 4rem);
   font-weight: 600;
   text-align: center;
   margin: 0;
@@ -318,6 +311,7 @@ header {
 }
 
 .pricing h1 {
+  font-size: clamp(1rem, 4vw, 4rem);
   font-weight: 600;
   text-align: center;
   color: #e0dede;
@@ -564,6 +558,7 @@ footer a {
   flex-direction: row;
 }
 .container h3 {
+  color: #04435c;
   font-size: 22px;
 }
 .footerlogo {
