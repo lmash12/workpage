@@ -552,8 +552,8 @@ footer li:hover {
 footer a {
   text-decoration: none;
   cursor: pointer;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
 }
 .container {
   display: flex;
@@ -575,7 +575,7 @@ footer a {
   text-decoration: none;
   color: black;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
 }
 .Flogo a {
   text-decoration: none;
