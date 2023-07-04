@@ -14,6 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -43,7 +49,7 @@
           <li><a onclick="scrollToSection('process')">Process</a></li>
           <li><a onclick="scrollToSection('pricing')">Pricing</a></li>
           <li>
-            <a onclick="scrollToSection('contact')">Connect</a>
+            <a onclick="scrollToSection('contact')" class="connect">Connect</a>
           </li>
         </div>
       </div>
@@ -252,26 +258,27 @@
       </div>
     </section>
     <section class="contact" id="contact">
-      <h1>Contact Us</h1>
-      <p>From as little as K500, we can enhance your online presence.</p>
+      <h1>Talk to Us</h1>
+      <p>Explore how we can enhance your online presence for as low as K500</p>
       <div class="form-container">
-        <form class="form">
+        <form class="form" id="contact" onsubmit="sendEmail(event)">
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" required="" />
+            <input type="email" id="email" name="user_email" required />
           </div>
           <div class="form-group">
             <label for="textarea">How Can We Help You?</label>
             <textarea
-              name="textarea"
+              name="message"
               id="textarea"
               rows="10"
               cols="50"
-              required=""
-            >
-            </textarea>
+              required
+            ></textarea>
           </div>
-          <button class="form-submit-btn" type="submit">Submit</button>
+          <button class="form-submit-btn" type="submit" value="Send">
+            Submit
+          </button>
         </form>
       </div>
       <div class="contactSM">
@@ -363,4 +370,38 @@
       <p>Site By 12G Inc</p>
     </div>
   </body>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("nMAEWyJ8xHsmgeh0P");
+    })();
+  </script>
+  <script>
+    const form = document.querySelector("#contact form");
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          "service_nqfu6vj",
+          "template_dgbrk8h",
+          form,
+          "nMAEWyJ8xHsmgeh0P"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("Message sent!");
+            form.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    };
+  </script>
 </html>

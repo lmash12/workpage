@@ -5,7 +5,7 @@
 }
 body {
   background-color: #e0dede;
-  font-family: "Poppins", sans-serif;
+  font-family: "PT Sans", sans-serif;
   line-height: 1.5;
 }
 header li {
@@ -17,7 +17,7 @@ header a {
   font-size: 1rem;
 }
 header a:hover {
-  color: #1f1e1e;
+  color: #333232;
 }
 header {
   position: relative;
@@ -52,7 +52,7 @@ header {
 }
 
 .action_btn {
-  background-color: orange;
+  background-color: green;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
@@ -62,11 +62,7 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
-.action-btn:hover {
-  -webkit-animation: rotate-90-vertical 5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: rotate-90-vertical 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
+
 .dropdown_menu {
   display: none;
   position: absolute;
@@ -91,6 +87,7 @@ header {
   justify-content: center;
   cursor: pointer;
 }
+
 .dropdown_menu li:first-child {
   padding-top: 3.5rem;
 }
@@ -133,7 +130,7 @@ header {
   }
   .navbar .toggle_btn {
     display: block;
-    color: #000;
+    color: #04435c;
     z-index: 6;
   }
   .dropdown_menu {
@@ -144,9 +141,20 @@ header {
     z-index: 2;
   }
   .dropdown_menu a {
-    color: #000;
+    color: #04435c;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
+  }
+  .dropdown_menu .connect {
+    background-color: green;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
   }
 }
 
@@ -204,7 +212,7 @@ header {
     5px 4px 3px 0px rgba(88, 88, 88, 0.425);
 }
 .services p {
-  word-spacing: 1px;
+  word-spacing: 0.5px;
   text-align: justify;
   line-break: auto;
 }
